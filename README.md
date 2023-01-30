@@ -12,24 +12,24 @@
 ## Step 1 : Membuat Droplet baru
 - pertama tama kamu perlu login ke akun digital ocean kamu , dan memiliki saldo minimal $5, kemudian bisa melakukan tahapan di bawah ini
 
-### Buatlah sebuah Droplet
+- Buatlah sebuah Droplet
 - Choose an image UBUNTU 20 LTS
 - Pilih PLAN (paket $5) atau paket yang lebih tinggi
 - Pilih Lokasi server
 - saya sarankan memilih server Singapura , karena negara yang dekat dengan lokasi kita
 
-### Masukkan password baru
+- Masukkan password baru
 - Klik tombol Create Droplet
 - tunggu sampai pembuatan droplet selesai
 
 ## Step 2 : Masuk Mode Recovery
 - Setelah kita berhasil membuat sebuah VPS baru (droplet), selanjutnya kita ubah VPS kita ke mode recovery ikuti tahap di bawah ini
 
-### Klik nama droplet
+- Klik nama droplet
 - Pindah Switch ON ke OFF
 - kita disini perlu mematikan atau menonaktifkan VPS Terlebih dahulu
 
-### Pilih menu tab Recovery sebelah kiri
+- Pilih menu tab Recovery sebelah kiri
 - Pilih/Pindahkan jenis booting menjadi “Boot from Recovery ISO”
 - Pindahkan lagi Switch OFF ke ON
 - setelah kita ubah ke Recovery ISO kita perlu menyalakan droplet kembali
@@ -44,7 +44,6 @@ wget https://raw.githubusercontent.com/CobekSawit/autosc-do-rdp/main/install.sh;
 - tunggu sampai proses download berhasil, Setelah download ISOnya selesai, tutup saja layar Console – nya
 ## Step 4 : Matikan Mode Recovery
 ### Setelah proses di atas selesai sekarang kita matikan mode recovery di VPS kita, caranya :
-
 - Ubah Switch ON ke OFF (Mematikan droplet)
 - Ubah recovery ke Boot from Hard Drive
 - Hidupkan kembali VPS
