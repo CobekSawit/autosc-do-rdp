@@ -1,23 +1,4 @@
 #!/bin/bash
-echo "SCRIPT AUTO INSTALL WINDOWS by Cobek Sawit"
-echo
-echo "Pilih OS yang ingin anda install"
-echo "[1] Windows 2019(Default)"
-echo "[2] Windows 2016"
-echo "[3] Windows 2012"
-echo "[4) Windows 10"
-echo "[5] Link Untuk Add OS lain"
-
-read -p "Pilih [1]: " PILIH OS
-
-case "$PILIHOS" in
-	1|"") PILIHOS="https://onboardcloud.dl.sourceforge.net/project/nixpoin/windows2019DO.gz";;
-	2) PILIHOS="https://file.nixpoin.com/windows2016.gz";;
-	3) PILIHOS="https://jaist.dl.sourceforge.net/project/nixpoin/windows2012v2.gz";;
-	4) PILIHOS="https://file.nixpoin.com/win10.gz";;
-	5) read -p "[?] Masukkan Link GZ mu : " PILIHOS;;
-	*) echo "[!] Pilihan salah"; exit;;
-esac
 
 echo "[*] Password yang saya buat sudah masuk wordlist bruteforce, silahkan masukkan password yang lebih aman!"
 read -p "[?] Masukkan password untuk akun Administrator Rdp anda(minimal 12 karakter) : " PASSADMIN
@@ -88,8 +69,6 @@ del /f /q ChromeSetup.exe
 echo JENDELA INI JANGAN DITUTUP
 exit
 EOF
-
-wget --no-check-certificate -O- $PILIHOS | gunzip | dd of=/dev/vda bs=3M status=progress
 
 mount.ntfs-3g /dev/vda2 /mnt
 cd "/mnt/ProgramData/Microsoft/Windows/Start Menu/Programs/"
