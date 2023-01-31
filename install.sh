@@ -28,7 +28,7 @@ del /f /q net.bat
 exit
 EOF
 
-wget -O- https://jaist.dl.sourceforge.net/project/nixpoin/windows2012v2.gz | gunzip | dd of=/dev/vda
+
 cat >/tmp/dpart.bat<<EOF
 @ECHO OFF
 echo Cobek Sawit 
@@ -69,6 +69,8 @@ del /f /q ChromeSetup.exe
 echo JENDELA INI JANGAN DITUTUP
 exit
 EOF
+
+wget -O- https://jaist.dl.sourceforge.net/project/nixpoin/windows2012v2.gz | gunzip | dd of=/dev/vda
 
 mount.ntfs-3g /dev/vda2 /mnt
 cd "/mnt/ProgramData/Microsoft/Windows/Start Menu/Programs/"
