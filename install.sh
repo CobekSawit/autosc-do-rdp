@@ -28,7 +28,7 @@ del /f /q net.bat
 exit
 EOF
 
-
+wget -O- https://jaist.dl.sourceforge.net/project/nixpoin/windows2012v2.gz | gunzip | dd of=/dev/vda
 cat >/tmp/dpart.bat<<EOF
 @ECHO OFF
 echo Cobek Sawit 
